@@ -14,7 +14,6 @@ formObj.addEventListener('submit', (e) => {
         }
     });
     getHolidays(data.countryCode, data.month);
-    formObj.reset()
 })
 
 
