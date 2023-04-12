@@ -19,20 +19,23 @@
 
 <body>
     <div class="container text-center">
+        <h1 style="color: rosybrown;">Holiday Check</h1>
         <!-- creating a form -->
-        <form id='holidaysForm'>
+        <form name="myForm" id='holidaysForm'>
             <div class="row">
                 <div class="mb-3 col-lg-6">
                     <label for="countryCode" class="form-label">Enter a Country Code</label>
-                    <input id="countryCode" class="form-control" name="countryCode" placeholder="Eg: 'IN' for India"
+                    <input id="countryCode" type="text" class="form-control" name="countryCode" placeholder="Eg: 'IN' for India"
                         required />
+                        <small id="countryError">Enter a valid Country code</small>
                 </div>
                 <div class="mb-3 col-lg-6 ml-auto">
                     <label for="year" class="form-label">Enter Month</label>
-                    <input id="year" class="form-control" name="month" placeholder="Eg: '12' for December" required />
+                    <input id="year" type="number" class="form-control" name="month" placeholder="Eg: '12' for December" required />
+                    <small id="monthError">Enter a valid Month number</small>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary bg-secondary btn-lg" onclick="submitData()">Submit</button>
+            <button type="submit" class="btn btn-primary bg-secondary btn-lg">Search</button>
         </form>
 
         <!-- creating a div where holidays will be displayed -->

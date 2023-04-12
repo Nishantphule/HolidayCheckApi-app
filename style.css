@@ -3,6 +3,11 @@ body {
     color: #fff;
 }
 
+small{
+    color: red;
+    display: none;
+}
+
 label {
     font-size: 26px;
     font-weight: bold;
